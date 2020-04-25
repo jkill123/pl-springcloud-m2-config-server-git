@@ -5,9 +5,15 @@ spring:
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false
         git:
           uri: https://github.com/jkill123/pl-spring-cloudconfig-wa-tolls
           #username: user
           #password: password
           search-paths:
             - 'station*'
+  security:
+    user:
+      password: testpassword
+      name: testuser
